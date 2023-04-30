@@ -1,0 +1,41 @@
+import { Powers } from "../../lib";
+
+
+export const waterSkills: Powers = {
+    water_beam: {
+        name: "Water Beam",
+        description: "Shoot a beam of water.",
+        type: "origins:active_self",
+        condition: {
+            inverted: true,
+            type: "origins:dimension",
+            dimension: "minecraft:the_nether",
+        },
+        entity_action: {
+            type: "origins:raycast",
+            distance: 14,
+            block: true,
+            entity: true,
+            shape_type: "outline",
+            fluid_handling: "none",
+            bientity_action: {
+                type: "origins:damage",
+                amount: 5,
+                source: {
+                    name: "Water",
+                },
+            },
+            command_along_ray: "fill ~ ~ ~ ~ ~ ~ water[level=1] replace air",
+            command_step: 1,
+        },
+        cooldown: 100,
+        hud_render: {
+            should_render: true,
+            sprite_location: "origins:textures/gui/resource_bar.png",
+            bar_index: 1,
+        },
+        key: {
+            key: "key.origins.primary_active",
+        },
+    },
+};

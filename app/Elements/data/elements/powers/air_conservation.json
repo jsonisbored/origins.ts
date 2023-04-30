@@ -1,0 +1,10 @@
+{
+    "name": "Air Conservation",
+    "description": "You lose air slower underwater.",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 15
+    }
+}

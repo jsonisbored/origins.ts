@@ -1,0 +1,9 @@
+{
+    "name": "Speed Boost",
+    "description": "Increases air speed.",
+    "type": "origins:modify_air_speed",
+    "modifier": {
+        "operation": "multiply_base_additive",
+        "value": 1.5
+    }
+}

@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"target": "esnext",
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"outDir": "./dist",
+		"rootDir": "./"
+	},
+	"include": [
+		"./src"
+	]
+}
