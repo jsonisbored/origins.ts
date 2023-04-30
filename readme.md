@@ -8,7 +8,7 @@ Why?
 
 [No-code alternative](https://xmgzx.github.io/apps/origin-creator/) 
 
-Mention Differences
+Differences
  - `origins:multiple` type
  - simplified `pack.mcmeta` interface
  - origin and origin_layer interfaces don't use id string
